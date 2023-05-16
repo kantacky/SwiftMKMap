@@ -6,13 +6,13 @@ Add this package to `Package.swift`
 ```
 let package = Package(
     dependencies: [
-        .package(url: "https://github.com/kantacky/SwiftMKMap", .upToNextMajor(from: "0.1.0")),
+        .package(url: "https://github.com/kantacky/SwiftMKMap", .upToNextMajor(from: "0.1.0"))
     ],
     targets: [
         .target(
             name: "<your-target-name>",
             dependencies: [
-                "SwiftMKMap"
+                .product(name: "SwiftMKMap", package: "SwiftMKMap")
             ]
         )
     ]
