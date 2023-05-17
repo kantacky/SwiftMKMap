@@ -21,7 +21,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/realm/SwiftLint", .upToNextMajor(from: "0.52.1"))
+        .package(url: "https://github.com/realm/SwiftLint", .upToNextMajor(from: "0.52.0"))
         
     ],
     targets: [
@@ -36,7 +36,10 @@ let package = Package(
         ),
         .target(
             name: "ExtendedMKModels",
-            dependencies: []
+            dependencies: [],
+            plugins: [
+                .plugin(name: "SwiftLintPlugin", package: "SwiftLint")
+            ]
         )
     ]
 )
