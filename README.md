@@ -12,8 +12,7 @@ let package = Package(
         .target(
             name: "<your-target-name>",
             dependencies: [
-                .product(name: "SwiftMKMap", package: "SwiftMKMap"),
-                .product(name: "ExtendedMKModels", package: "SwiftMKMap")
+                .product(name: "SwiftMKMap", package: "SwiftMKMap")
             ]
         )
     ]

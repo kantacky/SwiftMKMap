@@ -14,10 +14,6 @@ let package = Package(
         .library(
             name: "SwiftMKMap",
             targets: ["SwiftMKMap"]
-        ),
-        .library(
-            name: "ExtendedMKModels",
-            targets: ["ExtendedMKModels"]
         )
     ],
     dependencies: [
