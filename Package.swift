@@ -18,7 +18,6 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/realm/SwiftLint", .upToNextMajor(from: "0.52.0"))
-        
     ],
     targets: [
         .target(
