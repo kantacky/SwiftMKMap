@@ -2,7 +2,7 @@ import CoreLocation
 import Foundation
 import MapKit
 
-public struct Annotation: Equatable, Codable {
+public struct Annotation: Codable, Hashable {
     public static func == (lhs: Annotation, rhs: Annotation) -> Bool {
         lhs.coordinate == rhs.coordinate
         && lhs.title == rhs.title
